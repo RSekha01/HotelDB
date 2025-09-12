@@ -1,88 +1,39 @@
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
-
-[32m :: Spring Boot :: [39m              [2m (v3.5.5)[0;39m
-
-[2m2025-09-12T15:20:34.489+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mc.e.h.HotelManagementApplication        [0;39m [2m:[0;39m Starting HotelManagementApplication using Java 21.0.7 with PID 10472 (C:\Users\srkhgw1\Downloads\hotel-management (1)\hotel-management\target\classes started by srkhgw1 in C:\Users\srkhgw1\Downloads\hotel-management (1)\hotel-management)
-[2m2025-09-12T15:20:34.492+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mc.e.h.HotelManagementApplication        [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
-[2m2025-09-12T15:20:34.609+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mo.s.b.devtools.restart.ChangeableUrls   [0;39m [2m:[0;39m The Class-Path manifest attribute in C:\Users\srkhgw1\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.8.0.0\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/Users/srkhgw1/.m2/repository/com/oracle/database/jdbc/ojdbc8/19.8.0.0/oraclepki.jar
-[2m2025-09-12T15:20:34.609+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mo.s.b.devtools.restart.ChangeableUrls   [0;39m [2m:[0;39m The Class-Path manifest attribute in C:\Users\srkhgw1\.m2\repository\com\oracle\database\jdbc\ojdbc11\23.7.0.25.01\ojdbc11-23.7.0.25.01.jar referenced one or more files that do not exist: file:/C:/Users/srkhgw1/.m2/repository/com/oracle/database/jdbc/ojdbc11/23.7.0.25.01/oraclepki.jar
-[2m2025-09-12T15:20:34.610+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2m2025-09-12T15:20:34.610+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2m2025-09-12T15:20:36.348+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[2m2025-09-12T15:20:36.562+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 178 ms. Found 6 JPA repository interfaces.
-[2m2025-09-12T15:20:37.518+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port 8420 (http)
-[2m2025-09-12T15:20:37.540+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
-[2m2025-09-12T15:20:37.547+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mo.apache.catalina.core.StandardEngine   [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/10.1.44]
-[2m2025-09-12T15:20:37.653+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
-[2m2025-09-12T15:20:37.654+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 3044 ms
-[2m2025-09-12T15:20:38.018+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mo.hibernate.jpa.internal.util.LogHelper [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
-[2m2025-09-12T15:20:38.110+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36morg.hibernate.Version                   [0;39m [2m:[0;39m HHH000412: Hibernate ORM core version 6.6.26.Final
-[2m2025-09-12T15:20:38.211+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mo.h.c.internal.RegionFactoryInitiator   [0;39m [2m:[0;39m HHH000026: Second-level cache disabled
-[2m2025-09-12T15:20:38.644+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mo.s.o.j.p.SpringPersistenceUnitInfo     [0;39m [2m:[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
-[2m2025-09-12T15:20:38.694+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Starting...
-[2m2025-09-12T15:20:39.316+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mcom.zaxxer.hikari.pool.HikariPool       [0;39m [2m:[0;39m HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@302a2005
-[2m2025-09-12T15:20:39.319+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Start completed.
-[2m2025-09-12T15:20:39.509+05:30[0;39m [33m WARN[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36morg.hibernate.orm.deprecation           [0;39m [2m:[0;39m HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-[2m2025-09-12T15:20:39.551+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36morg.hibernate.orm.connections.pooling   [0;39m [2m:[0;39m HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 19.1
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-[2m2025-09-12T15:20:39.868+05:30[0;39m [31mERROR[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Failed to initialize JPA EntityManagerFactory: Collection 'com.example.hotelmanagement.model.FoodOrder.items' is 'mappedBy' a property named 'foodOrder' which does not exist in the target entity 'com.example.hotelmanagement.model.FoodOrderItem'
-[2m2025-09-12T15:20:39.869+05:30[0;39m [33m WARN[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mConfigServletWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.example.hotelmanagement.model.FoodOrder.items' is 'mappedBy' a property named 'foodOrder' which does not exist in the target entity 'com.example.hotelmanagement.model.FoodOrderItem'
-[2m2025-09-12T15:20:39.871+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Shutdown initiated...
-[2m2025-09-12T15:20:40.108+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Shutdown completed.
-[2m2025-09-12T15:20:40.113+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Stopping service [Tomcat]
-[2m2025-09-12T15:20:40.130+05:30[0;39m [32m INFO[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36m.s.b.a.l.ConditionEvaluationReportLogger[0;39m [2m:[0;39m 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-[2m2025-09-12T15:20:40.162+05:30[0;39m [31mERROR[0;39m [35m10472[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.example.hotelmanagement.model.FoodOrder.items' is 'mappedBy' a property named 'foodOrder' which does not exist in the target entity 'com.example.hotelmanagement.model.FoodOrderItem'
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.10.jar:6.2.10]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.10.jar:6.2.10]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.10.jar:6.2.10]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.10.jar:6.2.10]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.10.jar:6.2.10]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.10.jar:6.2.10]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.10.jar:6.2.10]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.10.jar:6.2.10]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.10.jar:6.2.10]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.5.jar:3.5.5]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.5.jar:3.5.5]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.5.jar:3.5.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.5.jar:3.5.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.5.jar:3.5.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.5.jar:3.5.5]
-	at com.example.hotelmanagement.HotelManagementApplication.main(HotelManagementApplication.java:10) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.5.jar:3.5.5]
-Caused by: org.hibernate.AnnotationException: Collection 'com.example.hotelmanagement.model.FoodOrder.items' is 'mappedBy' a property named 'foodOrder' which does not exist in the target entity 'com.example.hotelmanagement.model.FoodOrderItem'
-	at org.hibernate.boot.model.internal.CollectionBinder.isReversePropertyInJoin(CollectionBinder.java:1638) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
-	at org.hibernate.boot.model.internal.CollectionBinder.noAssociationTable(CollectionBinder.java:1652) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
-	at org.hibernate.boot.model.internal.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:1613) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
-	at org.hibernate.boot.model.internal.CollectionBinder$1.secondPass(CollectionBinder.java:1604) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
-	at org.hibernate.boot.model.internal.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:45) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1842) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1800) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:334) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.26.Final.jar:6.6.26.Final]
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.10.jar:6.2.10]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.10.jar:6.2.10]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.10.jar:6.2.10]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.10.jar:6.2.10]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.10.jar:6.2.10]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.10.jar:6.2.10]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.10.jar:6.2.10]
-	... 18 common frames omitted
+{"timestamp":"2025-09-12T15:39:31.7818592","message":"No static resource ."}
+when ran on localhost
+2025-09-12T15:37:05.348+05:30[0;39m [32m INFO[0;39m [35m12696[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: create table bookings (id number(19,0) not null, check_in_date date, check_out_date date, created_at timestamp(6), status varchar2(255 char), room_id number(19,0), user_id number(19,0), primary key (id))
+Hibernate: create table cleaning_requests (id number(19,0) not null, notes varchar2(255 char), requested_at timestamp(6), status varchar2(255 char), booking_id number(19,0), primary key (id))
+Hibernate: create table food_order_items (id number(19,0) generated by default as identity, quantity number(10,0) not null, order_id number(19,0) not null, menu_item_id number(19,0) not null, primary key (id))
+Hibernate: create table food_orders (id number(19,0) not null, created_at timestamp(6), status varchar2(255 char), total_price number(38,2), booking_id number(19,0), user_id number(19,0), primary key (id))
+Hibernate: create table menu_items (id number(19,0) not null, available number(1,0) check (available in (0,1)), description varchar2(255 char), name varchar2(255 char), price number(38,2), primary key (id))
+Hibernate: create table rooms (id number(19,0) not null, price number(38,2), room_number varchar2(255 char), status varchar2(255 char), type varchar2(255 char), primary key (id))
+Hibernate: create table users (id number(19,0) not null, email varchar2(255 char), name varchar2(255 char) not null, password varchar2(255 char) not null, role varchar2(255 char), primary key (id))
+Hibernate: alter table rooms drop constraint UK7ljglxlj90ln3lbas4kl983m2
+Hibernate: alter table rooms add constraint UK7ljglxlj90ln3lbas4kl983m2 unique (room_number)
+Hibernate: alter table users drop constraint UK6dotkott2kjsp8vw4d0m25fb7
+Hibernate: alter table users add constraint UK6dotkott2kjsp8vw4d0m25fb7 unique (email)
+Hibernate: create sequence booking_seq start with 1 increment by 1
+Hibernate: create sequence clean_seq start with 1 increment by 1
+Hibernate: create sequence food_order_seq start with 1 increment by 1
+Hibernate: create sequence menu_seq start with 1 increment by 1
+Hibernate: create sequence room_seq start with 1 increment by 1
+Hibernate: create sequence user_seq start with 1 increment by 1
+Hibernate: alter table bookings add constraint FKrgoycol97o21kpjodw1qox4nc foreign key (room_id) references rooms
+Hibernate: alter table bookings add constraint FKeyog2oic85xg7hsu2je2lx3s6 foreign key (user_id) references users
+Hibernate: alter table cleaning_requests add constraint FKgg0r1p4a2ncjec6x684pe10li foreign key (booking_id) references bookings
+Hibernate: alter table food_order_items add constraint FKpxjnwxd2k7r0cwpbgqm0p65hg foreign key (order_id) references food_orders
+Hibernate: alter table food_order_items add constraint FKr5494cd4sws8k8t31t7651mf5 foreign key (menu_item_id) references menu_items
+Hibernate: alter table food_orders add constraint FK52gyxp2h6idrw84kjlfmea669 foreign key (booking_id) references bookings
+Hibernate: alter table food_orders add constraint FKdy70v1qvfkxjurwtb0sxdwsq9 foreign key (user_id) references users
+[2m2025-09-12T15:37:06.258+05:30[0;39m [32m INFO[0;39m [35m12696[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2m2025-09-12T15:37:06.905+05:30[0;39m [33m WARN[0;39m [35m12696[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2m2025-09-12T15:37:07.301+05:30[0;39m [32m INFO[0;39m [35m12696[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mo.s.b.a.h2.H2ConsoleAutoConfiguration   [0;39m [2m:[0;39m H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@//din04db.gwl.com:1521/din04web2.isis.gwl.com'
+[2m2025-09-12T15:37:07.418+05:30[0;39m [32m INFO[0;39m [35m12696[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2025-09-12T15:37:07.518+05:30[0;39m [32m INFO[0;39m [35m12696[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port 8420 (http) with context path '/'
+[2m2025-09-12T15:37:07.531+05:30[0;39m [32m INFO[0;39m [35m12696[0;39m [2m--- [hotel-management] [  restartedMain] [0;39m[36mc.e.h.HotelManagementApplication        [0;39m [2m:[0;39m Started HotelManagementApplication in 7.862 seconds (process running for 8.972)
+Watse
+[2m2025-09-12T15:39:31.731+05:30[0;39m [32m INFO[0;39m [35m12696[0;39m [2m--- [hotel-management] [nio-8420-exec-1] [0;39m[36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2m2025-09-12T15:39:31.731+05:30[0;39m [32m INFO[0;39m [35m12696[0;39m [2m--- [hotel-management] [nio-8420-exec-1] [0;39m[36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2025-09-12T15:39:31.734+05:30[0;39m [32m INFO[0;39m [35m12696[0;39m [2m--- [hotel-management] [nio-8420-exec-1] [0;39m[36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 3 ms
+[2m2025-09-12T15:39:31.847+05:30[0;39m [33m WARN[0;39m [35m12696[0;39m [2m--- [hotel-management] [nio-8420-exec-1] [0;39m[36m.m.m.a.ExceptionHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .]
+[2m2025-09-12T15:39:31.904+05:30[0;39m [33m WARN[0;39m [35m12696[0;39m [2m--- [hotel-management] [nio-8420-exec-2] [0;39m[36m.m.m.a.ExceptionHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
