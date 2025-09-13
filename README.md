@@ -1,37 +1,42 @@
-package com.example.hotelmanagement.model;
-
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import jakarta.persistence.*;
-
-@Entity
-@Table(name = "food_order_items")
-public class FoodOrderItem {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @ManyToOne
-    @JoinColumn(name = "order_id", nullable = false)
-    @JsonBackReference   // 👈 prevents infinite loop when serializing
-    private FoodOrder foodOrder;
-
-    @ManyToOne
-    @JoinColumn(name = "menu_item_id", nullable = false)
-    private MenuItem menuItem;
-
-    private int quantity;
-
-    // getters and setters
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
-
-    public FoodOrder getFoodOrder() { return foodOrder; }
-    public void setFoodOrder(FoodOrder foodOrder) { this.foodOrder = foodOrder; }
-
-    public MenuItem getMenuItem() { return menuItem; }
-    public void setMenuItem(MenuItem menuItem) { this.menuItem = menuItem; }
-
-    public int getQuantity() { return quantity; }
-    public void setQuantity(int quantity) { this.quantity = quantity; }
+{
+  "id": 5,
+  "user": {
+    "id": 1,
+    "name": "admin",
+    "email": "admin@gmail.com",
+    "password": "admin",
+    "role": "USER"
+  },
+  "items1": [],
+  "booking": null,
+  "items": [
+    {
+      "id": 7,
+      "menuItem": {
+        "id": 1,
+        "name": "Pizza",
+        "description": "Cheese Pizza",
+        "price": 250,
+        "available": 1
+      },
+      "quantity": 1
+    },
+    {
+      "id": 8,
+      "menuItem": {
+        "id": 3,
+        "name": "Pasta",
+        "description": "White Sauce",
+        "price": 250,
+        "available": 1
+      },
+      "quantity": 200
+    }
+  ],
+  "totalPrice": 50250,
+  "status": "PLACED",
+  "createdAt": "2025-09-13T16:53:02.1823524"
 }
+
+
+we don't have available qty as 200, but showing placed....give changes
