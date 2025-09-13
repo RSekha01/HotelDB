@@ -1,83 +1,24 @@
-package com.example.hotelmanagement.service;
+package com.example.hotelmanagement.model;
 
-import com.example.hotelmanagement.model.FoodOrder;
-import com.example.hotelmanagement.model.FoodOrderItem;
-import com.example.hotelmanagement.model.MenuItem;
-import com.example.hotelmanagement.model.User;
-import com.example.hotelmanagement.repository.FoodOrderRepository;
-import com.example.hotelmanagement.repository.MenuItemRepository;
-import com.example.hotelmanagement.repository.UserRepository;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.math.BigDecimal;
-import java.util.ArrayList;
+import jakarta.persistence.*;
 import java.util.List;
-import java.util.Map;
 
-@Service
-public class FoodServiceImpl implements FoodService {
+@Entity
+public class Room {
 
-    private final MenuItemRepository menuItemRepository;
-    private final FoodOrderRepository foodOrderRepository;
-    private final UserRepository userRepository;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-    public FoodServiceImpl(MenuItemRepository menuItemRepository,
-                           FoodOrderRepository foodOrderRepository,
-                           UserRepository userRepository) {
-        this.menuItemRepository = menuItemRepository;
-        this.foodOrderRepository = foodOrderRepository;
-        this.userRepository = userRepository;
-    }
+    private String roomNumber;
+    private String type;
+    private Double price;
+    private String status; // AVAILABLE / BOOKED
 
-    @Override
-    public List<MenuItem> getMenu() {
-        return menuItemRepository.findAll();
-    }
+    // List of image URLs or paths
+    @ElementCollection
+    private List<String> imageUrls;
 
-    @Override
-    @Transactional
-    public FoodOrder placeOrder(Long userId, Long bookingId, Map<Long, Integer> itemIdToQty) {
-        User user = userRepository.findById(userId)
-                .orElseThrow(() -> new RuntimeException("User not found: " + userId));
-
-        FoodOrder order = new FoodOrder();
-        order.setUser(user);
-        order.setStatus("PLACED");
-        order.setItems(new ArrayList<>());
-
-        BigDecimal totalPrice = BigDecimal.ZERO;
-
-        for (Map.Entry<Long, Integer> entry : itemIdToQty.entrySet()) {
-            Long menuItemId = entry.getKey();
-            Integer quantity = entry.getValue();
-
-            MenuItem menuItem = menuItemRepository.findById(menuItemId)
-                    .orElseThrow(() -> new RuntimeException("Menu item not found: " + menuItemId));
-
-            // Check stock (available field)
-            if (menuItem.getAvailable() < quantity) {
-                throw new RuntimeException("Not enough stock for item: " + menuItem.getName());
-            }
-
-            // Reduce stock
-            menuItem.setAvailable(menuItem.getAvailable() - quantity);
-            menuItemRepository.save(menuItem);
-
-            // Create order item
-            FoodOrderItem orderItem = new FoodOrderItem();
-            orderItem.setFoodOrder(order);
-            orderItem.setMenuItem(menuItem);
-            orderItem.setQuantity(quantity);
-            order.getItems().add(orderItem);
-
-            // Update total price
-            totalPrice = totalPrice.add(menuItem.getPrice().multiply(BigDecimal.valueOf(quantity)));
-        }
-
-        order.setTotalPrice(totalPrice);
-
-        // Save order along with items (cascade should handle FoodOrderItem)
-        return foodOrderRepository.save(order);
-    }
+    // Getters and Setters
+    // ...
 }
