@@ -5,7 +5,6 @@ import com.example.hotelmanagement.model.FoodOrderItem;
 import com.example.hotelmanagement.model.MenuItem;
 import com.example.hotelmanagement.model.User;
 import com.example.hotelmanagement.repository.FoodOrderRepository;
-import com.example.hotelmanagement.repository.FoodOrderItemRepository;
 import com.example.hotelmanagement.repository.MenuItemRepository;
 import com.example.hotelmanagement.repository.UserRepository;
 import org.springframework.stereotype.Service;
@@ -21,16 +20,13 @@ public class FoodServiceImpl implements FoodService {
 
     private final MenuItemRepository menuItemRepository;
     private final FoodOrderRepository foodOrderRepository;
-    private final FoodOrderItemRepository foodOrderItemRepository;
     private final UserRepository userRepository;
 
     public FoodServiceImpl(MenuItemRepository menuItemRepository,
                            FoodOrderRepository foodOrderRepository,
-                           FoodOrderItemRepository foodOrderItemRepository,
                            UserRepository userRepository) {
         this.menuItemRepository = menuItemRepository;
         this.foodOrderRepository = foodOrderRepository;
-        this.foodOrderItemRepository = foodOrderItemRepository;
         this.userRepository = userRepository;
     }
 
@@ -59,7 +55,7 @@ public class FoodServiceImpl implements FoodService {
             MenuItem menuItem = menuItemRepository.findById(menuItemId)
                     .orElseThrow(() -> new RuntimeException("Menu item not found: " + menuItemId));
 
-            // ✅ Check stock (using available column)
+            // Check stock (available field)
             if (menuItem.getAvailable() < quantity) {
                 throw new RuntimeException("Not enough stock for item: " + menuItem.getName());
             }
@@ -81,12 +77,7 @@ public class FoodServiceImpl implements FoodService {
 
         order.setTotalPrice(totalPrice);
 
-        // Save order and items
-        FoodOrder savedOrder = foodOrderRepository.save(order);
-        for (FoodOrderItem item : savedOrder.getItems()) {
-            foodOrderItemRepository.save(item);
-        }
-
-        return savedOrder;
+        // Save order along with items (cascade should handle FoodOrderItem)
+        return foodOrderRepository.save(order);
     }
 }
