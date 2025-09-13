@@ -1,5 +1,6 @@
 package com.example.hotelmanagement.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 @Entity
@@ -12,6 +13,7 @@ public class FoodOrderItem {
 
     @ManyToOne
     @JoinColumn(name = "order_id", nullable = false)
+    @JsonBackReference   // 👈 prevents infinite loop when serializing
     private FoodOrder foodOrder;
 
     @ManyToOne
